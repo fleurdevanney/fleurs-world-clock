@@ -1,1 +1,47 @@
+body {
+  background-color: #f3f1fe;
+}
+.container {
+  background-color: white;
+  font-family: "roboto mono";
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 20px;
+}
+a {
+  color: pink;
+}
+h1 {
+  text-align: center;
+  font-family: "roboto mono";
+}
 
+select {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border-radius: 15px;
+  font-family: "roboto mono";
+}
+
+.city {
+  display: flex;
+  padding-top: 9px;
+}
+#date {
+  margin-right: 202px;
+  margin-top: -21px;
+  margin-left: 1px;
+}
+#time {
+  margin-left: 56px;
+  margin-top: 40px;
+  font-size: 26px;
+}
+
+footer {
+  text-align: center;
+  font-family: "roboto mono";
+  font-size: 12px;
+}
