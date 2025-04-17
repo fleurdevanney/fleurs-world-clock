@@ -10,9 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.47/moment-timezone-with-data-1970-2030.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data.min.js"></script>
     <title>fleur's world clock</title>
   </head>
   <body>
@@ -28,25 +27,27 @@
       <div class="city" id="london">
         <div>
           <h2>London 🇬🇧</h2>
-          <div id="date">Tuesday, 15th April</div>
+          <div id="date"></div>
         </div>
-        <div id="time">13:47:56PM</div>
+        <div id="time">
+          <div id="milliseconds"></div>
+        </div>
       </div>
 
       <div class="city" id="madrid">
         <div>
           <h2>Madrid 🇪🇸</h2>
-          <div id="date">Tuesday, 15th April</div>
+          <div id="date"></div>
         </div>
-        <div id="time">13:47:56PM</div>
+        <div id="time"><div id="milliseconds"></div></div>
       </div>
 
       <div class="city" id="new-york">
         <div>
           <h2>New York 🇺🇸</h2>
-          <div id="date">Tuesday, 15th April</div>
+          <div id="date"></div>
         </div>
-        <div id="time">13:47:56PM</div>
+        <div id="time"><div id="milliseconds"></div></div>
       </div>
     </div>
     <footer>
