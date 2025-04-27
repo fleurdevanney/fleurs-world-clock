@@ -17,37 +17,39 @@
   <body>
     <h1>WORLD CLOCK</h1>
     <div class="container">
-      <select id="cities">
+      <select id="city">
         <option value="">Select a city..</option>
-        <option value="london">London</option>
-        <option value="manchester">Madrid</option>
-        <option value="new-york">New York</option>
+        <option value="Europe/London">London</option>
+        <option value="Europe/Madrid">Madrid</option>
+        <option value="America/New_York">New York</option>
       </select>
 
-      <div class="city" id="london">
-        <div>
-          <h2>London 🇬🇧</h2>
-          <div id="date"></div>
+      <div id="cities">
+        <div class="city" id="london">
+          <div>
+            <h2>London 🇬🇧</h2>
+            <div id="date"></div>
+          </div>
+          <div id="time">
+            <div id="milliseconds"></div>
+          </div>
         </div>
-        <div id="time">
-          <div id="milliseconds"></div>
-        </div>
-      </div>
 
-      <div class="city" id="madrid">
-        <div>
-          <h2>Madrid 🇪🇸</h2>
-          <div id="date"></div>
+        <div class="city" id="madrid">
+          <div>
+            <h2>Madrid 🇪🇸</h2>
+            <div id="date"></div>
+          </div>
+          <div id="time"><div id="milliseconds"></div></div>
         </div>
-        <div id="time"><div id="milliseconds"></div></div>
-      </div>
 
-      <div class="city" id="new-york">
-        <div>
-          <h2>New York 🇺🇸</h2>
-          <div id="date"></div>
+        <div class="city" id="new-york">
+          <div>
+            <h2>New York 🇺🇸</h2>
+            <div id="date"></div>
+          </div>
+          <div id="time"><div id="milliseconds"></div></div>
         </div>
-        <div id="time"><div id="milliseconds"></div></div>
       </div>
     </div>
     <footer>

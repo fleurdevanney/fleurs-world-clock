@@ -39,3 +39,22 @@ setInterval(function () {
     .tz("America/New_York")
     .format("HH:mm:ss A");
 }, 10);
+
+function updateCity(event) {
+  let timeZone = event.target.value;
+  let cityName = timeZone.replace("_", " ").split("/")[1];
+  let cityTime = moment().tz(timeZone);
+  let citiesElement = document.querySelector("#cities");
+  citiesElement.innerHTML = `<div class="city">
+    <div>
+      <h2>${cityName}</h2>
+      <div id="date">${cityTime.format("dddd, Do MMMM")}</div>
+      </div>
+      <div id="time">${cityTime.format("HH:mm:ss A")}
+       <div id="milliseconds"></div>
+      </div>
+        </div>`;
+}
+
+let citiesSelectElement = document.querySelector("#city");
+citiesSelectElement.addEventListener("change", updateCity);
